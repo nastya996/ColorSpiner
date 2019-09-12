@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name" >Language</string>
+    <string name="OK">ok</string>
+    <string name="hello">Hello</string>
+    <string name="hi">@string/hello</string>
+    <string name="title">Мое приложение</string>
+    <string name="hello_world" >Привет мир!</string>
+
+    <string-array name="language">
+        <item>English</item>
+        <item>Русский</item>
+    </string-array>
+</resources>

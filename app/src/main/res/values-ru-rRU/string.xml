@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title">Мое приложение</string>
+    <string name="hello_world" >Привет мир!</string>
+    <string name="hello">Hello</string>
+    <string name="hi">@string/hello</string>
+    <string name="app_name" >Language</string>
+    <string name="OK">ok</string>
+</resources>
