@@ -1,13 +1,10 @@
 <resources>
-    <string name="app_name" >Language</string>
-    <string name="OK">ok</string>
-    <string name="hello">Hello</string>
-    <string name="hi">@string/hello</string>
-    <string name="title">Мое приложение</string>
-    <string name="hello_world" >Привет мир!</string>
-
-    <string-array name="language">
+    <string name="app_name">Language</string>
+    <string name="textView">Hello World!</string>
+    <string name="choose_language">Please, choose the language</string>
+    <string name="ok">OK</string>
+    <string-array name="languages">
         <item>English</item>
-        <item>Русский</item>
+        <item>Russian</item>
     </string-array>
 </resources>

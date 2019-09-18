@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Язык</string>
+    <string name="textView">Привет, мир!</string>
+    <string name="choose_language">Пожалуйста, выберите язык</string>
+    <string name="ok">OK</string>
+    <string-array name="languages">
+        <item>Английский</item>
+        <item>Русский</item>
+    </string-array>
+</resources>

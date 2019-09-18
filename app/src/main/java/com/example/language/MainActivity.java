@@ -18,34 +18,22 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
 
-        Spinner spinner = (Spinner) findViewById(R.id.spinner);
-        String selected = spinner.getSelectedItem().toString();
-        Toast.makeText(getApplicationContext(), selected, Toast.LENGTH_SHORT).show();
-
-        ArrayAdapter adapter = ArrayAdapter.createFromResource(this, R.array.language, android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner.setAdapter(adapter);
-
-        Locale locale = new Locale("en");
-        Locale.setDefault(locale);
-        Configuration configuration = new Configuration();
-        configuration.locale = locale;
-        getBaseContext().getResources().updateConfiguration(configuration, null);
-        setTitle(R.string.app_name);
-
-        Locale locale2 = new Locale("ru");
-        Locale.setDefault(locale2);
-        Configuration configuration1 = new Configuration();
-        configuration.locale=locale2;
-        getBaseContext().getResources().updateConfiguration(configuration, null);
-        setTitle(R.string.app_name);
-
-
-
-
+    public void btnOk(View view) {
+        Locale locale;
+        Spinner spinner = findViewById(R.id.spinner);
+        int position = spinner.getSelectedItemPosition();
+        if (position == 1) {
+            locale = new Locale("ru");
+        } else {
+            locale = new Locale("eng");
+        }
+        Configuration config = new Configuration();
+        config.setLocale(locale);
+        getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
+        recreate();
 
     }
+
 }
-
-
