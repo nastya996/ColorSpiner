@@ -7,4 +7,10 @@
         <item>English</item>
         <item>Russian</item>
     </string-array>
+    <string name="choose_color"> choose the color</string>
+    <string-array name="colors">
+        <item>Green</item>
+        <item>Blue</item>
+        <item>Black</item>
+    </string-array>
 </resources>
